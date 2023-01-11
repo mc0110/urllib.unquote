@@ -1,3 +1,17 @@
+ MIT License
+#
+# Copyright (c) 2022  Dr. Magnus Christ (mc0110)
+#
+
+# Use this for micropython modules
+#
+# Get formula-entries from browser unicodes (html5) needs
+# a parsing and converting process to a utf-8 string
+# normally this can be done with the urllib-module
+# this is a extrem short form, developed for html-forms
+
+# input string e.g. "a%C3%A4" -> "aü"
+
 def unquote(s):
     if '%' not in s:
         return s

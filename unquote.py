@@ -13,6 +13,7 @@
 # input string e.g. "a%C3%A4" -> "aü"
 
 def unquote(s):
+    s = s.replace("+"," ")
     if '%' not in s:
         return s
     s = s.split("%")
